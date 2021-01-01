@@ -1,0 +1,7 @@
+.monthlyRent {
+    display: flex;
+}
+
+.app {
+    overflow: auto!important;
+}
