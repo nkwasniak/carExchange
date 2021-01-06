@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Edit For Rent Ad</title>
-    <link href="css/register.css" type="text/css" rel="stylesheet"/>
+    <link href="css/form.css" type="text/css" rel="stylesheet"/>
     <link href="css/add-forrent.css" type="text/css" rel="stylesheet"/>
 </head>
 <#include "/_menu.ftl">

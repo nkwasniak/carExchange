@@ -2,7 +2,7 @@
 <#include "/_menu.ftl">
 <head>
     <title>Add New For Rent Advert</title>
-    <link href="css/register.css" type="text/css" rel="stylesheet"/>
+    <link href="css/form.css" type="text/css" rel="stylesheet"/>
     <link href="css/add-forrent.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>

@@ -4,9 +4,7 @@ import com.nkwasniak.carExchange.database.entity.ForRent;
 import com.nkwasniak.carExchange.database.entity.User;
 import com.nkwasniak.carExchange.dto.ForRentDTO;
 import com.nkwasniak.carExchange.dto.UserDTO;
-import org.springframework.stereotype.Component;
 
-@Component
 public interface DataMapper {
     ForRentDTO convertToDto(ForRent forRent);
 

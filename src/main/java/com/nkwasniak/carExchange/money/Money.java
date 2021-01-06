@@ -30,40 +30,6 @@ public class Money {
     private int centFactor() {
         return cents[currency.getDefaultFractionDigits()];
     }
-
-
-    public Money add(Money money) throws Exception {
-        if (!money.getCurrency().equals(this.currency)) {
-            throw (new Exception("different currency can't be add"));
-        }
-        BigDecimal value = this.getAmount().add(money.getAmount());
-        Money result = new Money(value.doubleValue(), this.getCurrency());
-        return result;
-    }
-
-    public Money minus(Money money) throws Exception {
-        if (!money.getCurrency().equals(this.currency)) {
-            throw (new Exception("different currency can't be minus"));
-        }
-
-        BigDecimal value = this.getAmount().add(money.getAmount().negate());
-        Money result = new Money(value.doubleValue(), this.getCurrency());
-        return result;
-
-    }
-
-    public Money multiply(double multiplicand, int roundingMode) {
-        BigDecimal amount = this.getAmount().multiply(new BigDecimal(multiplicand));
-        amount = amount.divide(BigDecimal.ONE, roundingMode);
-        return new Money(amount.doubleValue(), this.getCurrency());
-    }
-
-    public Money divide(double divisor, int roundingMode) {
-        BigDecimal amount = this.getAmount().divide(new BigDecimal(divisor), roundingMode);
-        Money result = new Money(amount.doubleValue(), this.getCurrency());
-        return result;
-
-    }
 }
 
 
